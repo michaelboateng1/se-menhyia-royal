@@ -7,7 +7,7 @@ import { HiOutlineViewList } from "react-icons/hi";
 const Navbar = () => {
   return (
     <section className="bg-[#ffffff] flex justify-between items-center w-full px-4">
-      <Image src="/images/images.jpeg" width={100} height={50} alt="Logo Image" className="pl-5" />
+      <img src="/images/images.jpeg" width={100} height={50} alt="Logo Image" className="pl-5" />
       <nav className="pr-8 md:pr-0">
         <HiOutlineViewList className="md:hidden text-[#2a0b5f] text-4xl hover:cursor-pointer" />
         <ul className="hidden md:flex justify-around list-none gap-8 px-2">

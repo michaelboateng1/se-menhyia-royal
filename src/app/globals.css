@@ -11,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #660908;
     --foreground: #ededed;
   }
 }
@@ -57,4 +57,12 @@ p {
   width: 100vw;
   height: 100vh;
   z-index: 20;
+}
+
+.facilities-nav-font {
+  font-family: var(--font-paragraph);
+}
+
+.facilities-text-bg {
+  background-color: hsla(262, 79%, 21%, 0.5);
 }

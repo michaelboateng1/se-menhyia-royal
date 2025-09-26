@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
-const images = ["140385158_3694857573926506_6586025298240270010_n.jpg", "141037434_3694850973927166_8463685071923821185_n.jpg", "165060036_3872392779506317_2932335964981565502_n.jpg", "165158288_3872392776172984_52699985938394164_n.jpg", "165172177_3872392742839654_6973448772588109516_n.jpg", "165241263_3872392792839649_5614509530255848085_n.jpg", "165491850_3872392769506318_6280323684505087135_n.jpg", "165639898_3872392762839652_4595636999444007239_n.jpg", "165975244_3872451109500484_1455683702820107925_n.jpg"];
+const images = ["140385158_3694857573926506_6586025298240270010_n.jpg", "141037434_3694850973927166_8463685071923821185_n.jpg", "165060036_3872392779506317_2932335964981565502_n.jpg", "165158288_3872392776172984_52699985938394164_n.jpg", "165172177_3872392742839654_6973448772588109516_n.jpg", "165241263_3872392792839649_5614509530255848085_n.jpg", "165491850_3872392769506318_6280323684505087135_n.jpg", "165639898_3872392762839652_4595636999444007239_n.jpg", "165975244_3872451109500484_1455683702820107925_n.jpg", "465226065_8654311911314356_5383156439751233946_n.jpg"];
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
@@ -18,7 +18,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className=" w-full h-[82vh] flex items-center justify-center relative overflow-hidden">
+    <section className=" w-full h-[82vh] flex items-center justify-center relative overflow-hidden border-b-4 border-[#2a0b5f]">
       <div className="w-full h-full relative flex items-center justify-center z-30">
         <FaArrowAltCircleLeft className="absolute top-1/2 left-4 text-4xl text-white/70 hover:text-white cursor-pointer z-30 select-none" onClick={() => setCurrent((prev) => (prev - 1 + images.length) % images.length)} />
         <FaArrowAltCircleRight className="absolute top-1/2 right-4 text-4xl text-white/70 hover:text-white cursor-pointer z-30 select-none" onClick={() => setCurrent((prev) => (prev + 1) % images.length)} />
