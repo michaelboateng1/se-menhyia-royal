@@ -1,6 +1,7 @@
 import Hero from "./conponent/Hero";
 import OurStory from "./conponent/OurStory";
 import Facilities from "./conponent/Facilities";
+import SchoolActivities from "./conponent/SchoolActivities";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <OurStory />
       <Facilities />
+      <SchoolActivities />
     </main>
   );
 }
