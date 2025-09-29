@@ -47,8 +47,12 @@ p {
   background-size: cover;
 }
 
+.school-name {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
 .overlay {
-  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5), hsla(262, 79%, 21%, 0.7));
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5));
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -77,6 +81,28 @@ p {
   transform: scale(1.1);
 }
 
-.activity-card:hover .activity-image {
+.extracurricular-card:hover .extracurricular-image {
   transform: scale(1.1);
+}
+
+.footer {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 0%, 0.6)), url("../../public/images/212962979_4156409141104678_6420393497855448392_n.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.background-pattern {
+  opacity: 0.8;
+  background-image: radial-gradient(ellipse farthest-corner at 10px 10px, #da9408, #da9408 50%, #660908 50%);
+  background-size: 10px 10px;
+}
+
+.callto-action {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)), url("../../public/images/212962979_4156409141104678_6420393497855448392_n.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
