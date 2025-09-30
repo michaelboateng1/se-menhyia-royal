@@ -4,7 +4,7 @@ import FooterLinks from "./FooterLinks";
 const Footer = () => {
   return (
     <footer className="footer mt-20">
-      <div className=" py-10 px-5 flex flex-col md:flex-row justify-start items-center gap-10">
+      <div className="max-w-7xl mx-auto py-10 px-4 md:px-10 flex flex-col md:flex-row justify-start md:items-center items-start gap-10">
         <FooterMessage />
         <FooterLinks />
       </div>

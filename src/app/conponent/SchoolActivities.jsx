@@ -30,14 +30,13 @@ const activities = [
 
 const SchoolActivities = () => {
   return (
-    <section className="container mt-5 py-5 px-10">
-      <h2 className="text-2xl text-[#da9408] py-5 px-3 md:px-5 uppercase text-center md:w-[300px] text-nowrap mb-20 md:mx-auto md:border-b-4 md:border-[#da9408]">school activities</h2>
-      <div className="container grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <section className="max-w-7xl mx-auto mt-5 py-8 px-4 md:px-10">
+      <h2 className="text-2xl text-[#da9408] py-5 px-3 md:px-5 uppercase text-center md:w-[300px] text-nowrap mb-10 md:mb-20 md:mx-auto md:border-b-4 md:border-[#da9408]">school activities</h2>
+      <div className="grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {activities.map((activity, i) => (
           <SchoolActivitiesCard key={i} {...activity} />
         ))}
       </div>
-      <p></p>
     </section>
   );
 };

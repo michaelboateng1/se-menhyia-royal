@@ -1,7 +1,7 @@
 "use client";
 const FacilitiesNav = ({ setSelected }) => {
   return (
-    <nav className="hidden sm:block w-[50vw] mx-auto p-3 facilities-nav-font">
+    <nav className="hidden sm:block w-full max-w-2xl mx-auto p-3 facilities-nav-font">
       <ul className="flex justify-center items-center list-none gap-5">
         <li className="py-2 px-5 text-nowrap border border-[#da9408] hover:bg-[#da9408] hover:shadow-xl hover:shadow-[hsla(40,93%,44%, 0.7)] transition-colors rounded-[10px] capitalize cursor-pointer" onClick={(e) => setSelected("all")}>
           all

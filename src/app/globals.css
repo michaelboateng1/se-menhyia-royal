@@ -39,20 +39,26 @@ p {
   font-family: var(--font-paragraph);
 }
 
-.hero {
+
+.dropdown:hover ul {
+  /* animation: dropdownAnimation 0.3s ease-in-out forwards !important; */
+  display: block !important;
+}
+
+/* .hero {
   background: linear-gradient(hsla(40, 93%, 44%, 0.5), hsla(40, 93%, 44%, 0.4), hsla(262, 79%, 21%, 0.3));
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 
 .school-name {
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 .overlay {
-  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5));
+  background: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7));
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -83,6 +89,7 @@ p {
 
 .extracurricular-card:hover .extracurricular-image {
   transform: scale(1.1);
+  border-radius: 0;
 }
 
 .footer {
@@ -105,4 +112,21 @@ p {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+@keyframes dropdownAnimation {
+  0% {
+    opacity: 0.1 !important;
+    /* height: 20% !important; */
+  }
+
+  50% {
+    opacity: 0.5 !important;
+    /* height: 50% !important; */
+  }
+
+  100% {
+    opacity: 1 !important;
+    /* height: 100% !important; */
+  }
 }

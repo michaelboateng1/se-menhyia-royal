@@ -59,27 +59,27 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className=" w-full h-[82vh] flex items-center justify-center relative overflow-hidden border-b-4 border-[#2a0b5f]">
-      <div className="w-full h-full relative flex items-center justify-center z-30">
-        <FaArrowAltCircleLeft className="absolute top-1/2 left-4 text-4xl text-white/70 hover:text-white cursor-pointer z-30 select-none" onClick={() => setCurrent((prev) => (prev - 1 + images.length) % images.length)} />
-        <FaArrowAltCircleRight className="absolute top-1/2 right-4 text-4xl text-white/70 hover:text-white cursor-pointer z-30 select-none" onClick={() => setCurrent((prev) => (prev + 1) % images.length)} />
+    <section className="w-full h-[82vh] flex items-center justify-center relative overflow-hidden border-b-4 border-[#2a0b5f] px-4 md:px-12">
+      <div className="w-full h-full relative flex items-center justify-center z-30 pointer-events-none">
+        <FaArrowAltCircleLeft className="absolute top-1/2 -translate-y-1/2 left-6 md:left-12 text-4xl md:text-5xl text-white/80 hover:text-white cursor-pointer z-30 select-none pointer-events-auto" onClick={() => setCurrent((prev) => (prev - 1 + images.length) % images.length)} />
+        <FaArrowAltCircleRight className="absolute top-1/2 -translate-y-1/2 right-6 md:right-12 text-4xl md:text-5xl text-white/80 hover:text-white cursor-pointer z-30 select-none pointer-events-auto" onClick={() => setCurrent((prev) => (prev + 1) % images.length)} />
       </div>
       <div className="overlay"></div>
       {images.map((slide, i) => (
         <img key={i} src={`/images/${slide.image}`} alt={slide.caption} loading="lazy" className={`absolute w-full h-full object-cover transition-opacity duration-1000 ${i === current ? "opacity-100 z-10" : "opacity-0 z-0"}`} />
       ))}
 
-      <h1 className="school-name absolute top-2/4 left-2/4 transform -translate-x-1/2 text-3xl md:text-5xl font-bold text-white drop-shadow-lg md:text-nowrap z-20">Se-Manhyia Royal International School</h1>
+      <h1 className="school-name absolute top-[32%] left-1/2 -translate-x-1/2 text-3xl md:text-5xl font-bold text-white drop-shadow-lg md:text-nowrap z-20 text-center px-2 md:px-0">Se-Manhyia Royal International School</h1>
 
       {
         images.map((slide, i) => (
-          <div key={i} className={`absolute bottom-20 md:bottom-32 w-full text-center text-white px-4 transition-opacity duration-1000 ${i === current ? "opacity-100 z-20" : "opacity-0 z-0"}`}>
-            <p className="school-name text-2xl md:text-4xl font-semibold drop-shadow-lg">{slide.caption}</p>
+          <div key={i} className={`absolute bottom-24 md:bottom-36 w-full text-center text-white px-4 transition-opacity duration-1000 ${i === current ? "opacity-100 z-20" : "opacity-0 z-0"}`}>
+            <p className="school-name text-xl md:text-3xl font-semibold drop-shadow-lg mb-4 md:mb-6">{slide.caption}</p>
           </div>
         ))[current]
       }
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
         {images.map((dots, i) => (
           <span key={i} className={`block w-3 h-3 rounded-full bg-white/70 border border-white transition-all duration-300 ${i === current ? "scale-125 bg-white" : "opacity-60"}`} />
         ))}
