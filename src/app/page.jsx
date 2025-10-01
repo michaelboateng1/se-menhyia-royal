@@ -1,14 +1,13 @@
-import Hero from "./conponent/Hero";
-import OurStory from "./conponent/OurStory";
-import Facilities from "./conponent/Facilities";
-import Extracurricular from "./conponent/Extracurricular";
-import SchoolActivities from "./conponent/SchoolActivities";
-import Calltoaction from "./conponent/Calltoaction";
-import Footer from "./conponent/Footer";
+import Hero from "./component/Hero";
+import OurStory from "./component/OurStory";
+import Facilities from "./component/Facilities";
+import Extracurricular from "./component/Extracurricular";
+import SchoolActivities from "./component/SchoolActivities";
+import Calltoaction from "./component/Calltoaction";
 
 export default function Home() {
   return (
-    <main className="mt-[120px]">
+    <main className="mt-[100px]">
       <article>
         <Hero />
         <OurStory />

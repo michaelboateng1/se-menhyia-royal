@@ -1,8 +1,8 @@
 import { Roboto_Slab, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 
-import Header from "./conponent/Header";
-import Footer from "./conponent/Footer";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
 
 const robotoSlab = Roboto_Slab({
   variable: "--font-heading",
@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${robotoSlab.variable} ${robotoCondensed.variable} antialiased`}>
+      <body className={`${robotoSlab.variable} ${robotoCondensed.variable} antialiased `}>
         <Header />
         {children}
         <Footer />

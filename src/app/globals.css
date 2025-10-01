@@ -39,19 +39,21 @@ p {
   font-family: var(--font-paragraph);
 }
 
+/* .dropdown ul {
+  animation: dropdownAnimation 0.3s ease-in-out forwards;
+} */
 
 .dropdown:hover ul {
-  /* animation: dropdownAnimation 0.3s ease-in-out forwards !important; */
   display: block !important;
 }
 
-/* .hero {
-  background: linear-gradient(hsla(40, 93%, 44%, 0.5), hsla(40, 93%, 44%, 0.4), hsla(262, 79%, 21%, 0.3));
+.bg-image {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)), url("../../public/images/212962979_4156409141104678_6420393497855448392_n.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-} */
+}
 
 .school-name {
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
@@ -92,14 +94,6 @@ p {
   border-radius: 0;
 }
 
-.footer {
-  background: linear-gradient(hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 0%, 0.6)), url("../../public/images/212962979_4156409141104678_6420393497855448392_n.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 .background-pattern {
   opacity: 0.8;
   background-image: radial-gradient(ellipse farthest-corner at 10px 10px, #da9408, #da9408 50%, #660908 50%);
@@ -107,11 +101,23 @@ p {
 }
 
 .callto-action {
-  background: linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)), url("../../public/images/212962979_4156409141104678_6420393497855448392_n.jpg");
+  background: linear-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8)), url("../../public/images/486479990_9469740553104817_3934133199728506919_n.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.footer {
+  background: linear-gradient(hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 0%, 0.6)), url("../../public/images/486479990_9469740553104817_3934133199728506919_n.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.dropShadow {
+  filter: drop-shadow(2px 2px 4px #333);
 }
 
 @keyframes dropdownAnimation {
