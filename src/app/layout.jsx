@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${robotoSlab.variable} ${robotoCondensed.variable} antialiased `}>
+      <body className={`${robotoSlab.variable} ${robotoCondensed.variable} antialiased overflow-x-hidden`}>
         <Header />
         {children}
         <Footer />
