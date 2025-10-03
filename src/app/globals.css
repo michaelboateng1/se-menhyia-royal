@@ -95,9 +95,9 @@ p {
 }
 
 .background-pattern {
-  opacity: 0.8;
-  background-image: radial-gradient(ellipse farthest-corner at 10px 10px, #da9408, #da9408 50%, #660908 50%);
-  background-size: 10px 10px;
+  background-color: #660908;
+  background: radial-gradient(circle, transparent 20%, #660908 20%, #660908 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #660908 20%, #660908 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#da9408 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #da9408 0.8px, #660908 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
 .callto-action {

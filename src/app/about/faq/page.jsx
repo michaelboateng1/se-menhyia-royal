@@ -1,10 +1,5 @@
-import Hero from "./component/Hero";
-import OurStory from "./component/OurStory";
-import Facilities from "./component/Facilities";
-import Extracurricular from "./component/Extracurricular";
-import SchoolActivities from "./component/SchoolActivities";
-import Calltoaction from "./component/Calltoaction";
-import FreaquentlyAskedQuestions from "./component/FreaquentlyAskedQuestions";
+import FreaquentlyAskedQuestions from "@/app/component/FreaquentlyAskedQuestions";
+import WhyOurSchool from "../components/WhyOurSchool";
 
 const faq = [
   {
@@ -25,18 +20,13 @@ const faq = [
   },
 ];
 
-export default function Home() {
+const FrequentlyAskedQuestions = () => {
   return (
     <main className="mt-[100px]">
-      <article>
-        <Hero />
-        <OurStory />
-        <Facilities />
-        <Extracurricular />
-        <SchoolActivities />
-        <Calltoaction />
-        <FreaquentlyAskedQuestions faq={faq} />
-      </article>
+      <WhyOurSchool />
+      <FreaquentlyAskedQuestions faq={faq} />
     </main>
   );
-}
+};
+
+export default FrequentlyAskedQuestions;

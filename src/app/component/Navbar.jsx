@@ -6,62 +6,47 @@ import Dropdown from "./Dropdown";
 import { FaSortDown } from "react-icons/fa";
 import { HiOutlineViewList } from "react-icons/hi";
 
-const contactDropdown = [
-  {
-    url: "/moreinfo",
-    text: "something",
-  },
-  {
-    url: "/somthingelse",
-    text: "somthingelse",
-  },
-  {
-    url: "/somthingelse",
-    text: "somthingelse",
-  },
-];
-
 const aboutDropdown = [
   {
-    url: "/moreinfo",
-    text: "something",
+    url: "about/faq",
+    text: "Frequently Asked Questions",
   },
   {
-    url: "/somthingelse",
+    url: "somthingelse",
     text: "somthingelse",
   },
   {
-    url: "/somthingelse",
+    url: "somthingelse",
     text: "somthingelse",
   },
 ];
 
 const amissionsDropdown = [
   {
-    url: "/moreinfo",
+    url: "moreinfo",
     text: "something",
   },
   {
-    url: "/somthingelse",
+    url: "somthingelse",
     text: "somthingelse",
   },
   {
-    url: "/somthingelse",
+    url: "somthingelse",
     text: "somthingelse",
   },
 ];
 
 const academicsDropdown = [
   {
-    url: "/moreinfo",
+    url: "moreinfo",
     text: "something",
   },
   {
-    url: "/somthingelse",
+    url: "somthingelse",
     text: "somthingelse",
   },
   {
-    url: "/somthingelse",
+    url: "somthingelse",
     text: "somthingelse",
   },
 ];
@@ -79,10 +64,8 @@ const Navbar = () => {
           </li>
           <li className="relative group">
             <Link href="/contact" className="py-4 flex gap-2 justify-around text-[#2a0b5f] text-xl uppercase hover:text-[#da9408] transition-colors">
-              <span>Contact</span>
-              <FaSortDown />
+              Contact
             </Link>
-            <Dropdown links={contactDropdown} />
           </li>
           <li className="relative group">
             <Link href="/about" className="py-4 flex gap-2 justify-around text-[#2a0b5f] text-xl uppercase hover:text-[#da9408] transition-colors">
