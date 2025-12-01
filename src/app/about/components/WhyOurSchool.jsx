@@ -1,6 +1,6 @@
 const WhyOurSchool = () => {
   return (
-    <section className="mt-[150px] py-4 px-10 max-w-[800px] mx-auto bg-white rounded drop-shadow-md">
+    <section className="mt-[150px] py-4 px-10 max-w-[800px] mx-auto bg-white dark:text-black rounded drop-shadow-md">
       <h2 className="text-2xl text-[#da9408] font-bold mb-4">Why Choose Se-Menyhia Royal School?</h2>
       <img src="/images/165491850_3872392769506318_6280323684505087135_n.jpg" alt="A classroom at Se-Menyhia Royal School" className="float-right clear-both w-1/2 h-auto p-3 rounded-md" />
       <p>Imagine a school where students love to learn because their work is engaging and meaningful. Montessori pedagogy is student-centered, following the child’s natural development and leveraging their natural strengths and interests, so kids LOVE school.</p>

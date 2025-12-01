@@ -1,6 +1,7 @@
 import { Roboto_Slab, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 
+import Store from "./store/store";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 
@@ -23,9 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${robotoSlab.variable} ${robotoCondensed.variable} antialiased overflow-x-hidden`}>
-        <Header />
-        {children}
-        <Footer />
+	<Store>
+        	<Header />
+        	{children}
+        	<Footer />
+	</Store>
       </body>
     </html>
   );

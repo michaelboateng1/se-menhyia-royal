@@ -1,5 +1,8 @@
-import Image from "next/image";
+"use client"
+
 import Link from "next/link";
+import {AppStore} from "../store/store";
+import {useContext} from "react";
 
 import Dropdown from "./Dropdown";
 
@@ -8,63 +11,32 @@ import { HiOutlineViewList } from "react-icons/hi";
 
 const aboutDropdown = [
   {
+    url: "about/about-us",
+    text: "About Us",
+  },
+  {
     url: "about/faq",
     text: "Frequently Asked Questions",
-  },
-  {
-    url: "somthingelse",
-    text: "somthingelse",
-  },
-  {
-    url: "somthingelse",
-    text: "somthingelse",
-  },
+  }
 ];
 
-const amissionsDropdown = [
-  {
-    url: "moreinfo",
-    text: "something",
-  },
-  {
-    url: "somthingelse",
-    text: "somthingelse",
-  },
-  {
-    url: "somthingelse",
-    text: "somthingelse",
-  },
-];
 
-const academicsDropdown = [
-  {
-    url: "moreinfo",
-    text: "something",
-  },
-  {
-    url: "somthingelse",
-    text: "somthingelse",
-  },
-  {
-    url: "somthingelse",
-    text: "somthingelse",
-  },
-];
+
 const Navbar = () => {
+  const {state, dispatch} = useContext(AppStore);
+  const hundleMobileNav = () => {
+		console.log("you clicked me")
+		dispatch({type: "mobileNav", payload: !state.mobileNav});
+	}
   return (
-    <section className="bg-[#ffffff] flex justify-between items-center w-full px-6 md:px-10">
+    <section className="bg-[#ffffff] flex justify-between items-center w-full px-6 lg:px-10">
       <img src="/images/images.jpeg" width={100} height={50} alt="Logo Image" className="h-auto w-[70px]" />
       <nav className="">
-        <HiOutlineViewList className="md:hidden text-[#2a0b5f] text-4xl hover:cursor-pointer py-1" />
-        <ul className="hidden md:flex justify-around list-none gap-6 md:gap-8 px-2">
+        <HiOutlineViewList className="lg:hidden text-[#2a0b5f] text-4xl hover:cursor-pointer py-1" onClick={() => hundleMobileNav()} />
+        <ul className="hidden lg:flex justify-around list-none gap-6 lg:gap-8 px-2">
           <li>
             <Link href="/" className="py-4 flex gap-2 justify-around text-[#2a0b5f] text-xl uppercase hover:text-[#da9408] transition-colors">
               Home
-            </Link>
-          </li>
-          <li className="relative group">
-            <Link href="/contact" className="py-4 flex gap-2 justify-around text-[#2a0b5f] text-xl uppercase hover:text-[#da9408] transition-colors">
-              Contact
             </Link>
           </li>
           <li className="relative group">
@@ -75,23 +47,25 @@ const Navbar = () => {
             <Dropdown links={aboutDropdown} />
           </li>
           <li className="relative group">
+            <Link href="/contact" className="py-4 flex gap-2 justify-around text-[#2a0b5f] text-xl uppercase hover:text-[#da9408] transition-colors">
+              Contact
+            </Link>
+          </li>
+          <li className="relative group">
             <Link href="/admissions" className="py-4 flex gap-2 justify-around text-[#2a0b5f] text-xl uppercase hover:text-[#da9408] transition-colors">
               <span>Admissions</span>
-              <FaSortDown />
             </Link>
-            <Dropdown links={amissionsDropdown} />
           </li>
           <li className="relative group">
             <Link href="/academics" className="py-4 flex gap-2 justify-around text-[#2a0b5f] text-xl uppercase hover:text-[#da9408] transition-colors">
               <span>Academics</span>
-              <FaSortDown />
             </Link>
-            <Dropdown links={academicsDropdown} />
           </li>
         </ul>
       </nav>
     </section>
   );
 };
+
 
 export default Navbar;

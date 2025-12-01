@@ -95,8 +95,7 @@ p {
 }
 
 .background-pattern {
-  background-color: #660908;
-  background: radial-gradient(circle, transparent 20%, #660908 20%, #660908 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #660908 20%, #660908 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#da9408 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #da9408 0.8px, #660908 0.8px) -0.4px 0;
+  background: radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #660908 20%, #660908 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#da9408 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #da9408 0.8px, #660908 0.8px) -0.4px 0;
   background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
@@ -118,6 +117,10 @@ p {
 
 .dropShadow {
   filter: drop-shadow(2px 2px 4px #333);
+}
+
+.customGradient {
+  background: linear-gradient(to bottom, #da9408, #660908);
 }
 
 @keyframes dropdownAnimation {
